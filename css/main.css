@@ -272,16 +272,29 @@ input::placeholder {
 
 .watch-1, .watch-2, .watch-3 {
 	width: 100%;
-	min-height: auto;
+	height: 475px;
 	padding: 0px;
-	display: inline-block;
+	display: table;
+}
+
+.watch-1, .watch-3 {
 	text-align: right;
 }
 
+.watch-2 {
+	text-align: left;
+}
+
+.watch-2, .watch-3 {
+	margin-top: -4px;
+}
+
 .description-video {
-	width: 30%;
+	width: 35%;
 	height: 480px;
+	padding: 20px 50px;
 	display: inline-block;
 	text-align: left;
 	vertical-align: top;
 }
+

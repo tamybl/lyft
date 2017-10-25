@@ -1,3 +1,170 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.8em;
+	font-weight: 500;
+}
+/* Menu navegacion Sitio */
+
+header {
+	width: 100%;
+	height: 600px;
+	background: -moz-linear-gradient(#691b84,#2b1e66);
+    background: -webkit-linear-gradient(#691b84, #2b1e66);
+    background: -o-linear-gradient(#691b84, #2b1e66);
+    background: linear-gradient(#691b84, #2b1e66);	
+    z-index: 1;
+}
+
+nav {
+	width: 100%;
+	height: 110px;
+	background: -moz-linear-gradient(left,transparent,#2f1246);
+    background: -webkit-linear-gradient(left,transparent, #2f1246);
+    background: -o-linear-gradient(left,transparent, #2f1246);
+    background: linear-gradient(left,transparent, #2f1246);
+	display: table;
+	vertical-align: middle;
+	position: fixed;
+	z-index: 4;
+}
+
+.logo a {
+	width: 55%;
+	font-size: 2em;
+	color: #fff;
+	text-decoration: none;
+	display: table-cell;
+	text-align: center;
+}
+
+.logo img {
+	width: 64px;
+	height: auto;
+	margin-left: 80px;
+	margin-top: 40px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu {
+	width: 45%;
+	padding-left: 30px;
+	padding-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.menu a {
+	margin: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #ff00bf;
+}
+
+.menu a:last-child {
+	border: 1px solid #fff;
+	padding: 8px 14px;
+	border-radius: 6px;
+}
+
+.menu a:last-child:hover {
+	color: #ff00bf;
+	border: 1px solid #ff00bf;
+	padding: 8px 14px;
+	border-radius: 6px;
+}
+
+.intro-section {
+	width: 100%;
+	height: 776px;
+	background-image: url(../assets/images/hero.gif);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -110px;
+	z-index: 2;
+}
+
+.signup-subsection {
+	width: 560px;
+	height: 410px;
+	padding: 64px;
+	background-color: #fff;
+	position: absolute;
+	right: 0px;
+	top: 120px;
+	z-index: 3;
+	color: #352384;
+}
+
+.signup-subsection input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #352384;
+	outline: 0;
+	font-size: 1.2em;
+}
+/* Seccion Caracteristicas Servicio */
+
+.app-section {
+	width: 100%;
+	min-height: 200px;
+	padding: 30px;
+	color: #fff;
+	display: table;
+	vertical-align: middle;
+	text-align: center;
+	background: -moz-linear-gradient(#691b84,#2b1e66);
+    background: -webkit-linear-gradient(#691b84, #2b1e66);
+    background: -o-linear-gradient(#691b84, #2b1e66);
+    background: linear-gradient(#691b84, #2b1e66);	
+}
+
+.app-section img {
+	width: 40%;
+	height: auto;
+	padding: 0px 20px;
+	display: inline-block;
+}
+.content {
+	width: 40%;
+	margin-right: 10px;
+	padding: 0px 20px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.content p {
+	margin-bottom: 60px;
+}

@@ -16,6 +16,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* Tamaño fuentes principales */
 h1 {
 	text-transform: uppercase;
 	font-size: 2.5em;
@@ -26,12 +27,20 @@ h2 {
 	text-transform: uppercase;
 	font-size: 1.8em;
 	font-weight: 500;
+	margin: 0;
+}
+
+h6 {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin: 0;
 }
 /* Menu navegacion Sitio */
 
 header {
 	width: 100%;
-	height: 600px;
+	height: 646px;
 	background: -moz-linear-gradient(#691b84,#2b1e66);
     background: -webkit-linear-gradient(#691b84, #2b1e66);
     background: -o-linear-gradient(#691b84, #2b1e66);
@@ -42,10 +51,11 @@ header {
 nav {
 	width: 100%;
 	height: 110px;
-	background: -moz-linear-gradient(left,transparent,#2f1246);
-    background: -webkit-linear-gradient(left,transparent, #2f1246);
-    background: -o-linear-gradient(left,transparent, #2f1246);
-    background: linear-gradient(left,transparent, #2f1246);
+	background-color: rgba(46, 18, 68, 0.6);
+	/*background: -moz-linear-gradient(#2f1246,transparent);
+    background: -webkit-linear-gradient( #2f1246,transparent);
+    background: -o-linear-gradient(#2f1246,transparent);
+    background: linear-gradient( #2f1246,transparent);*/
 	display: table;
 	vertical-align: middle;
 	position: fixed;
@@ -54,7 +64,6 @@ nav {
 
 .logo a {
 	width: 55%;
-	font-size: 2em;
 	color: #fff;
 	text-decoration: none;
 	display: table-cell;
@@ -75,6 +84,7 @@ nav {
 	padding-left: 30px;
 	padding-top: 10px;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 	font-size: 1.2em;
 	display: table-cell;
 	vertical-align: middle;
@@ -119,6 +129,7 @@ nav {
 	width: 560px;
 	height: 410px;
 	padding: 64px;
+	display: table;
 	background-color: #fff;
 	position: absolute;
 	right: 0px;
@@ -127,19 +138,106 @@ nav {
 	color: #352384;
 }
 
+.signup-subsection form {
+	display: block;
+	margin-bottom: 15px;
+}
+
 .signup-subsection input {
 	width: 100%;
+	padding-bottom: 10px;
 	border: none;
 	border-bottom: 1px solid #352384;
 	outline: 0;
+	resize: none;
+	font-size: 0.9em;
+	color: #352384;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input::placeholder {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2em;
+	color: #cbd1e0;
+}
+
+.text-info {
+	padding: 5px 0px 10px 0px;
+	color: #728099;
+	font-size: 0.6em;
+	letter-spacing: 1pt;
+}
+
+.text-info a {
+	color: #ff00bf;
+	text-decoration: none;
+}
+
+.text-info a:hover {
+	color: #b30086;
+	text-decoration: underline;
+}
+
+.signup-subsection p:first-child {
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 1pt;
+}
+
+/* Boton Registro conductor */
+
+.btn-register {
+	margin: 10px;
+	padding: 12px 20px;
+	display: inline-block;
+	background-color: #ff00bf;
+	font-size: 1.1em;
+	font-weight: 400;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.btn-register a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Boton inicio de sesion en cuenta */
+
+.btn-login {
+	margin: 10px;
+	padding: 12px 20px;
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: 400;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 6px;
+}
+
+.btn-login a {
+	color: #728099;
+	text-decoration: underline;
+}
+
+.btn-login a:hover {
+	color: #b30086;
 }
 /* Seccion Caracteristicas Servicio */
 
 .app-section {
 	width: 100%;
-	min-height: 200px;
-	padding: 30px;
+	min-height: 300px;
+	height: auto;
+	padding: 0px 30px 30px 30px;
 	color: #fff;
 	display: table;
 	vertical-align: middle;
@@ -148,6 +246,7 @@ nav {
     background: -webkit-linear-gradient(#691b84, #2b1e66);
     background: -o-linear-gradient(#691b84, #2b1e66);
     background: linear-gradient(#691b84, #2b1e66);	
+
 }
 
 .app-section img {
@@ -167,4 +266,22 @@ nav {
 
 .content p {
 	margin-bottom: 60px;
+}
+
+/* Seccion videos */ 
+
+.watch-1, .watch-2, .watch-3 {
+	width: 100%;
+	min-height: auto;
+	padding: 0px;
+	display: inline-block;
+	text-align: right;
+}
+
+.description-video {
+	width: 30%;
+	height: 480px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
 }

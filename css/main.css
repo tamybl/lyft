@@ -30,6 +30,13 @@ h2 {
 	margin: 0;
 }
 
+h4 {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: 500;
+	margin: 10px 0px;
+}
+
 h6 {
 	text-transform: uppercase;
 	font-size: 0.8em;
@@ -296,5 +303,90 @@ input::placeholder {
 	display: inline-block;
 	text-align: left;
 	vertical-align: top;
+}
+
+/* Pie de Pagina */
+
+footer {
+	width: 100%;
+	padding: 20px;
+	margin-top: -4px;
+	height: auto;
+	color: #f3f3f5;
+	font-size: .9em;
+	font-weight: 300;
+	background-color: #333447;
+	display: block;
+}
+
+footer p {
+	width: 100%;
+	color: #f3f3f5;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer p a {
+	color: #f3f3f5;
+	text-decoration: none;
+	margin: 0px 5px;
+}
+
+.fa-twitter, .fa-facebook, .fa-instagram {
+	width: 40px;
+	height: 40px;
+	padding: 12px;
+	margin: 0px 10px;
+	border: 1px solid  white;
+	border-radius: 50%;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+.footer-column-1, .footer-column-2, .footer-column-3 {
+	width: 20%;
+	height: auto;
+	margin: 0% 2%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+.footer-column-4 {
+	width: 20%;
+	height: auto;
+	margin: 0% 2%;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+}
+
+.footer-column-4 img {
+	width: 135px;
+	height: auto;
+}
+.footer-column-1 p, .footer-column-2 p, .footer-column-3 p {
+	font-size: 1em;
+}
+
+.footer-column-1 a, .footer-column-2 a, .footer-column-3 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-column-1 a:hover, .footer-column-2 a:hover, .footer-column-3 a:hover {
+	text-decoration: underline;
+	color: #ff00bf;
+}
+
+ul li {
+	list-style: none;
+	padding: 10px 0px;
+}
+
+hr {
+	width: 50%;
 }
 

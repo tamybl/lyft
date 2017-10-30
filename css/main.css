@@ -329,17 +329,30 @@ footer p a {
 	margin: 0px 5px;
 }
 
-.fa-twitter, .fa-facebook, .fa-instagram {
-	width: 40px;
-	height: 40px;
-	padding: 12px;
-	margin: 0px 10px;
-	border: 1px solid  white;
-	border-radius: 50%;
-	vertical-align: middle;
-	text-align: center;
+/* Iconos Redes Sociales */
 
+.icon-twitter2:before {
+  content: "\e900";
 }
+
+.icon-facebook2:before {
+  content: "\e902";
+}
+
+.icon-instagram:before {
+  content: "\e901";
+}
+
+
+.icon-twitter2, .icon-instagram, .icon-facebook2 {
+	padding: 9px;
+	margin: 12px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+/* Columnas Pie de Pagina */ 
 
 .footer-column-1, .footer-column-2, .footer-column-3 {
 	width: 20%;
